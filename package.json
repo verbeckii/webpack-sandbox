@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },  
+  },
   "browserslist": [
-    "defaults",
-    "not IE 11",
-    "maintained node versions"
+    "last 2 chrome versions",
+    "last 2 edge versions",
+    "edge 18"
   ],
   "author": "Dmitrii",
   "license": "ISC",
@@ -17,5 +17,8 @@
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6"
+  },
+  "dependencies": {
+    "core-js": "^3.18.2"
   }
 }
