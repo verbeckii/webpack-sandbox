@@ -1,7 +1,15 @@
-import Log from "./log";
-import Calc from "./calc";
+import React from "react";
+import ReactDOM from "react-dom";
 
-const calc = new Calc();
-const log = new Log();
+const App = () => {
+    async function f() {
+        await console.log(`async await`);
+    }
+    f()
+    
+    return (
+        <p>Hello</p>
+    )
+}
 
-log.log(calc.add(1, 2, 3));
+ReactDOM.render(<App/>, document.getElementById('root'));
